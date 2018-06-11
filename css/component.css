@@ -1,3 +1,35 @@
+
+/* mobile icons */
+
+.icon {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+.icon--misc {
+	background-image: url('../images/avocado.png');
+}
+.icon--pommes {
+	background-image: url('../images/apple.png');
+}
+
+.icon--stonefruit {
+	background-image: url('../images/cherry.png');
+}
+
+.icon--citrus {
+	background-image: url('../images/orange.png');
+}
+
+.icon--nuts {
+	background-image: url('../images/almond.png');
+}
+
+
+
 /* Product grid */
 
 .grid {
