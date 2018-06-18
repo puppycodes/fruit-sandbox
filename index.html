@@ -7,6 +7,9 @@
 	<title>Fruit Layout Idea</title>
 
 
+
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
 	<!-- General demo styles & header -->
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	 <!-- Flickity gallery styles -->
@@ -38,17 +41,15 @@
 		<!-- Blueprint header -->
 
 		<!-- Grid -->
-		<section class="grid grid--loading">
+		<section class="grid">
 			<!-- Loader -->
-			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+			<!-- <img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" /> -->
 			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
 			<div class="grid__sizer"></div>
 			<!-- Grid items -->
 			<div class="grid__item pommes">
-				<div class="slider">
-					<div class="slider__item"><img src="images/apple.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/apple.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/apple.png" alt="Dummy" /></div>
+				<div class="fruit-container">
+					<div class="fruit"><img src="images/apple.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Apple</h3>
@@ -58,10 +59,8 @@
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 			<div class="grid__item nuts">
-				<div class="slider">
-					<div class="slider__item"><img src="images/nut.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/nut.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/nut.png" alt="Dummy" /></div>
+				<div class="fruit-container">
+					<div class="fruit"><img src="images/nut.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Almond</h3>
@@ -71,10 +70,8 @@
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 			<div class="grid__item stonefruit">
-				<div class="slider">
-					<div class="slider__item"><img src="images/cherry.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/cherry.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/cherry.png" alt="Dummy" /></div>
+				<div class="fruit-container">
+					<div class="fruit"><img src="images/cherry.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Cherry</h3>
@@ -84,10 +81,8 @@
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 			<div class="grid__item grid__item--size-a pommes">
-				<div class="slider">
-					<div class="slider__item"><img src="images/pear.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/pear.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/pear.png" alt="Dummy" /></div>
+				<div class="fruit-container">
+					<div class="fruit"><img src="images/pear.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Pear</h3>
@@ -97,23 +92,18 @@
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 			<div class="grid__item citrus">
-				<div class="slider">
-					<div class="slider__item"><img src="images/orange.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/orange.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/orange.png" alt="Dummy" /></div>
+				<div class="fruit-container">
+					<div class="fruit"><img src="images/orange.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Orange</h3>
 					<span class="meta__brand">Citrus</span>
-
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 			<div class="grid__item grid__item--size-a misc">
-				<div class="slider">
-					<div class="slider__item"><img src="images/avocado.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/avocado.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/avocado.png" alt="Dummy" /></div>
+				<div class="fruit-container">
+					<div class="fruit"><img src="images/avocado.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Avocado</h3>

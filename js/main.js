@@ -1,13 +1,3 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2015, Codrops
- * http://www.codrops.com
- */
 ;(function(window) {
 
 	'use strict';
@@ -31,7 +21,6 @@
 			}
 		};
 
-	// from http://www.sberry.me/articles/javascript-event-throttling-debouncing
 	function throttle(fn, delay) {
 		var allowSample = true;
 
@@ -43,43 +32,20 @@
 			}
 		};
 	}
-
-	// sliders - flickity
-	var sliders = [].slice.call(document.querySelectorAll('.slider')),
-		// array where the flickity instances are going to be stored
-		flkties = [],
-		// grid element
-		grid = document.querySelector('.grid'),
+	
+	let	grid = document.querySelector('.grid'),
 		// isotope instance
 		iso,
 		// filter ctrls
-		filterCtrls = [].slice.call(document.querySelectorAll('.filter > button')),
+		filterCtrls = [].slice.call(document.querySelectorAll('.filter > button'))
 		// cart
-		cart = document.querySelector('.cart'),
-		cartItems = cart.querySelector('.cart__count');
+
 
 	function init() {
 		// preload images
 		imagesLoaded(grid, function() {
-			initFlickity();
 			initIsotope();
 			initEvents();
-			classie.remove(grid, 'grid--loading');
-		});
-	}
-
-	function initFlickity() {
-		sliders.forEach(function(slider){
-			var flkty = new Flickity(slider, {
-				prevNextButtons: false,
-				wrapAround: true,
-				cellAlign: 'left',
-				contain: true,
-				resize: false
-			});
-
-			// store flickity instances
-			flkties.push(flkty);
 		});
 	}
 
@@ -104,14 +70,12 @@
 				iso.arrange({
 					filter: filterCtrl.getAttribute('data-filter')
 				});
-				recalcFlickities();
 				iso.layout();
 			});
 		});
 
 		// window resize / recalculate sizes for both flickity and isotope/masonry layouts
 		window.addEventListener('resize', throttle(function(ev) {
-			recalcFlickities()
 			iso.layout();
 		}, 50));
 
@@ -129,11 +93,7 @@
 		});
 	}
 
-	function recalcFlickities() {
-		for(var i = 0, len = flkties.length; i < len; ++i) {
-			flkties[i].resize();
-		}
-	}
+
 
 	init();
 
